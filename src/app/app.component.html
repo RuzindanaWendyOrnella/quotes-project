@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.--> 
+<div style="text-align:center">
+  <h1>
+    {{ quote}}!
+  </h1>
+  <img width="600" alt="Angular Logo" src="https://i2.wp.com/best-quotes.net/wp-content/uploads/2018/01/best-quotes-logo.png?fit=395%2C162&ssl=1">
+</div>
+
+<ul>
+  <li *ngFor='let quote of quotes'>
+    {{quote.name}} <br> -{{quote.author}}
+  </li>
+  </ul>
+<h2>Are you interested in giving the world a taste of your imagination?</h2>
+<p>Fill this form to add your quotes to the list of our best quotes and for staters see how many votes you get.</p>
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+
+<router-outlet></router-outlet>
+
+
+
+
