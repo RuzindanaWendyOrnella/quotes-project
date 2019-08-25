@@ -25,6 +25,7 @@ this.newQuote=new Quote("","","");
 // }
 
   }
+  
   constructor() { }
 
   ngOnInit() {  }
