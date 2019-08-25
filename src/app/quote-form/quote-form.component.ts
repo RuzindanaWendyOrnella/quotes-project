@@ -14,16 +14,6 @@ export class QuoteFormComponent implements OnInit {
 this.addQuote.emit(this.newQuote);
 
 this.newQuote=new Quote("","","",new Date());
-
-// if(this.newQuote!==null){
-  // $('button#me').click(function(){
-  //   // $(alert('hi'));
-  //   console.log(this.newQuote)
-
-  // $('ul#list').append("<li><span>"+this.newQuote.name+"</span></li>");
-  // });
-// }
-
   }
   
   constructor() { }

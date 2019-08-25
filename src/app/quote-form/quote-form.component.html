@@ -2,7 +2,6 @@
   <hr>
   <form (ngSubmit)='submitGoal()' #goalForm='ngForm'>
     <div class="form-group">
-
       <label for="name">Name</label>
       <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' placeholder=" enter your name" required>
       <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
