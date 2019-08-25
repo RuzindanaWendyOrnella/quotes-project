@@ -8,15 +8,16 @@
 </div>
 
 <ul>
-  <li *ngFor='let quote of quotes'>
+  <li *ngFor='let quote of quotes,let i = index'>
     "{{quote.quote}}"<br> -{{quote.author}}<br>added by {{quote.name}}
-    <app-votes></app-votes>
+    <app-votes (isComplete) = 'completeQuote($event,i)'></app-votes>
+  
     
   </li>
   </ul>
 <h2>Are you interested in giving the world a taste of your imagination?or even show your favorite quote?</h2>
 <p>Fill this form to add your quotes or another person's quote to the list of our best quotes and for staters see how many votes you get.</p>
-<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<app-quote-form (addQuote)="addNewQuote($event) "></app-quote-form>
 
 <router-outlet></router-outlet>
 
