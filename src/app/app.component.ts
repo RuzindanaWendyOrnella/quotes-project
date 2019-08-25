@@ -20,4 +20,10 @@ export class AppComponent {
     this.quotes.push(quote)
   }
   
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
+  
 }
