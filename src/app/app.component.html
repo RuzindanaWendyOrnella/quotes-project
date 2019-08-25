@@ -1,4 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.--> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div style="text-align:center">
   <h1>
     {{ quote}}!
@@ -8,7 +9,8 @@
 
 <ul>
   <li *ngFor='let quote of quotes'>
-    {{quote.name}} <br> -{{quote.author}}
+    {{quote.name}} <br> -{{quote.author}} <app-votes></app-votes>
+    
   </li>
   </ul>
 <h2>Are you interested in giving the world a taste of your imagination?</h2>
