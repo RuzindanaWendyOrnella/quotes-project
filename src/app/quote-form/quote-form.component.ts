@@ -7,13 +7,13 @@ import { Quote} from '../quote';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  newQuote = new Quote("","","");
+  newQuote = new Quote("","","",new Date());
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitGoal(){
 this.addQuote.emit(this.newQuote);
 
-this.newQuote=new Quote("","","");
+this.newQuote=new Quote("","","",new Date());
 
 // if(this.newQuote!==null){
   // $('button#me').click(function(){
