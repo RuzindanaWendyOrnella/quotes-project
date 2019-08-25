@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Output,EventEmitter,Input} from '@angular/core';
+import { Quote } from '@angular/compiler';
 
 @Component({
   selector: 'app-votes',
@@ -14,6 +15,12 @@ export class VotesComponent implements OnInit {
  downvotes(){
    this.dislikes=this.dislikes+1
  }
+ @Input() quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  quoteComplete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
   constructor() { }
 
   ngOnInit() {
