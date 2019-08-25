@@ -19,4 +19,5 @@ export class AppComponent {
     quote.id = quoteLength+1;
     this.quotes.push(quote)
   }
+  
 }
