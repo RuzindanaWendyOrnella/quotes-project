@@ -2,7 +2,7 @@
 ### by  **Ruzindana Ornella Wendy**
 ## DESCRIPTION
 ### quotes-project
-its an aplication that permits people posts their quotes or even otjer people's quotes and people can view them and give likes or dislikes
+its an aplication that permits people posts their quotes or even other people's quotes and people can view them and give likes or dislikes
 ## SETUP INSTALLATION  REQUIRED
   *UBUNTU
   *VISIO CODE
